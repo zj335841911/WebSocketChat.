@@ -28,9 +28,9 @@ WebSocket 是HTML5一种新的协议，它实现了浏览器与服务器全双�
 	百度富文本编辑器（UMeditor1_2_2）
 
 
-### 5. 源代码下载 ###
+### 5. 效果展示 ###
 
-
+![img](http://git.oschina.net/uploads/images/2016/0405/215938_97aa8493_736993.png)
 
 
 # 二、新建空项目 #
