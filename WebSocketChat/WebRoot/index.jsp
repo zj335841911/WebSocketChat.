@@ -102,7 +102,7 @@ $(function(){
     //接收服务器的消息
     socket.onmessage=function(ev){
     	var obj = eval(   '('+ev.data+')'   );
-    	addMessage(obj)
+    	addMessage(obj);
     }
     
     $("#send").click(function(){
@@ -148,6 +148,8 @@ function addMessage(msg){
 	box.addClass(msg.isSelf? 'am-comment-flip':'');	//右侧显示
 	box.addClass(msg.isSelf? 'am-comment-warning':'am-comment-success');//颜色
 	box.css((msg.isSelf? 'margin-left':'margin-right'),"20%");//外边距
+	
+	$("#ChatBox div:eq(0)").scrollTop(999999); 	//滚动条移动至最底部
 	
 }
 
