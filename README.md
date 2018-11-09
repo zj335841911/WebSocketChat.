@@ -10,7 +10,7 @@
 
 WebSocket 是HTML5一种新的协议，它实现了浏览器与服务器全双工通信，这里就将使用WebSocket来开发网页聊天室，前端框架会使用AmazeUI，后台使用Java，编辑器使用UMEditor。
 
-使用WebSocket协议实现的即时通讯聊天室，可作为学习DEMO使用，需要使用JavaEE7和Tomcat8才能正常运行，使用支持HTML5的浏览器，比如新版的FireFox或Chrome，视频教程与相关资源：[https://yunpan.cn/cqMPVjvvbuTsM](https://yunpan.cn/cqMPVjvvbuTsM) 访问密码 b122
+使用WebSocket协议实现的即时通讯聊天室，可作为学习DEMO使用，需要使用JavaEE7和Tomcat8才能正常运行，使用支持HTML5的浏览器，比如新版的FireFox或Chrome，视频教程与相关资源：[https://ke.qq.com/course/350105](https://ke.qq.com/course/350105)
 
 ### 2. 涉及知识点 ###
 
