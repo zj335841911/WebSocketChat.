@@ -1,8 +1,4 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -35,7 +31,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    <div class="am-collapse am-topbar-collapse" id="collapse-head">
 	      <ul class="am-nav am-nav-pills am-topbar-nav">
 	        <li class="am-active"><a href="#">首页</a></li>
-	        <li><a href="#">项目</a></li>
 	      </ul>
 	
 	      <div class="am-topbar-right">
@@ -98,7 +93,7 @@ $(function(){
     
     
     var nickname = "风清扬"+Math.random();
-	var socket = new WebSocket("ws://${pageContext.request.getServerName()}:${pageContext.request.getServerPort()}${pageContext.request.contextPath}/websocket");
+	var socket = new WebSocket("ws://localhost:8080/WebSocketChat/websocket");
     //接收服务器的消息
     socket.onmessage=function(ev){
     	var obj = eval(   '('+ev.data+')'   );
